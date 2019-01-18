@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<title> Calender as of Surya Siddhanta </title>
+<head>
+<style type="text/css">
+
+.main {
+width:200px;
+border:1px solid black;
+}
+
+.month {
+background-color:black;
+font:bold 12px verdana;
+color:white;
+}
+
+.daysofweek {
+background-color:gray;
+font:bold 12px verdana;
+color:white;
+}
+
+.days {
+font-size: 24px;
+font-family:verdana;
+color:black;
+background-color: lightyellow;
+padding: 2px;
+}
+
+.days #bangla{
+font-size: 10px;
+text-align:left;
+font-family:verdana;
+color: green;
+}
+
+.days #today{
+font-weight: bold;
+color: red;
+}
+
+</style>
+
+
+<script type="text/javascript" src="bncalendar.js">
+
+/***********************************************
+* Source: 
+* Bangla calendar added to "Basic Calendar Java Script" -By Brian Gosselin @ http://scriptasylum.com
+* and Bangla calendar created by Uttam Singha @ http://www.usingha.com 
+***********************************************/
+
+</script> 
+</head>
+
+
+<body>
+
+<hr>
+সূর্যসিদ্ধান্ত পঞ্জিকা
+
+<form>
+<textarea rows="5" name="S5" cols="90">
+<script type="text/javascript">
+document.write(getfullyear());
+</script>  
+</textarea>
+</form>
+
+<form name="bdcalendar" action="javascript:return false;"> Type English Year
+<input type="text" name="myear" size="20">
+<input type="button" value="Calculate" onclick="formSubmit();" />
+</form>
+<div id="vvv" align="center"><font color="#800040"><font face="sans-serif, serif">Please, wait...</font></font></div>
+<hr>
+
+
+</body>
+</html>
